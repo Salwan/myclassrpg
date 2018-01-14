@@ -14,7 +14,10 @@ public:
 	}
 
 	void run() {
-
+        while(!bQuit) {
+            m_world->update();
+            m_player->update();
+        }
 	}
 
 private:
@@ -39,4 +42,6 @@ private:
 
 	World* m_world;
 	Player* m_player;
+              
+    bool bQuit;
 };

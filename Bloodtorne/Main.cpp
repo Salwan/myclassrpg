@@ -1,12 +1,13 @@
 #include <iostream>
 #include "Game.h"
 
-void main() {
+int main() {
 	IO::PrintLn("Bloodtorne");
-	IO::PrintLn("======================================\n");
+	IO::PrintLn("======================================");
 
 	Game game;
 	game.run();
 
 	system("pause");
+    return 0;
 }
