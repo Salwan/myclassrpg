@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _GAME_H_
+#define _GAME_H_
 
 #include "IO.h"
 #include "World.h"
@@ -6,42 +7,19 @@
 
 class Game {
 public:
-	Game() {
-		init();
-	}
-	~Game() {
-		deinit();
-	}
+    Game();
+    virtual ~Game();
 
-	void run() {
-        while(!bQuit) {
-            m_world->update();
-            m_player->update();
-        }
-	}
+    void run();
 
 private:
-	void init() {
-		m_world = new World();
-		m_world->init();
-
-		m_player = new Player();
-		m_player->init();
-	}
-
-	void deinit() {
-		if (m_world) {
-			delete m_world;
-			m_world = nullptr;
-		}
-		if (m_player) {
-			delete m_player;
-			m_player = nullptr;
-		}
-	}
+    void init();
+    void deinit();
 
 	World* m_world;
 	Player* m_player;
               
     bool bQuit;
 };
+
+#endif

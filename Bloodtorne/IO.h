@@ -1,13 +1,14 @@
-#pragma once
+#ifndef _IO_H_
+#define _IO_H_
 
 #include <iostream>
 #include <string>
 #include <stdarg.h>
 
 namespace IO {
-    const size_t BUFFER_SIZE = 256;
+    static const size_t BUFFER_SIZE = 256;
     
-    void Print(std::string text, ...) {
+    static void Print(std::string text, ...) {
         char buffer [BUFFER_SIZE];
         va_list args;
         va_start(args, text);
@@ -16,7 +17,7 @@ namespace IO {
         va_end(args);
     }
     
-	void PrintLn(std::string text, ...) {
+	static void PrintLn(std::string text, ...) {
         char buffer [BUFFER_SIZE];
         va_list args;
         va_start(args, text);
@@ -25,7 +26,7 @@ namespace IO {
         va_end(args);
 	}
 
-	std::string GetText(std::string question, std::string default_answer) {
+	static std::string GetText(std::string question, std::string default_answer) {
 		std::string out_str;
 		std::cout << question << " ";
 		std::getline(std::cin, out_str);
@@ -35,7 +36,9 @@ namespace IO {
 		return out_str;
 	}
     
-    void NewLn() {
+    static void NewLn() {
         std::cout << std::endl;
     }
 }
+
+#endif

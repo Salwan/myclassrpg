@@ -10,6 +10,7 @@
 		2FB8C568200313FF00ABAB64 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8C567200313FF00ABAB64 /* main.cpp */; };
 		2FE6E38D200B8AA100FD70C3 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6E38C200B8AA100FD70C3 /* Player.cpp */; };
 		2FE6E38F200B910900FD70C3 /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6E38E200B910900FD70C3 /* World.cpp */; };
+		2FE6E391200CBFA100FD70C3 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE6E390200CBFA100FD70C3 /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		2FE6E38B2003143100FD70C3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		2FE6E38C200B8AA100FD70C3 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		2FE6E38E200B910900FD70C3 /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		2FE6E390200CBFA100FD70C3 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2FB8C567200313FF00ABAB64 /* main.cpp */,
 				2FE6E38C200B8AA100FD70C3 /* Player.cpp */,
 				2FE6E38E200B910900FD70C3 /* World.cpp */,
+				2FE6E390200CBFA100FD70C3 /* Game.cpp */,
 			);
 			path = Bloodtorne;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 				2FE6E38D200B8AA100FD70C3 /* Player.cpp in Sources */,
 				2FB8C568200313FF00ABAB64 /* main.cpp in Sources */,
 				2FE6E38F200B910900FD70C3 /* World.cpp in Sources */,
+				2FE6E391200CBFA100FD70C3 /* Game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

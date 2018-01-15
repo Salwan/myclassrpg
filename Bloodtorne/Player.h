@@ -1,4 +1,5 @@
-#pragma once
+#ifndef _PLAYER_H_
+#define _PLAYER_H_
 
 #include <iostream>
 #include <string>
@@ -7,7 +8,7 @@ class Player
 {
 public:
     Player();
-    ~Player();
+    virtual ~Player();
 
     void init();
     void update();
@@ -16,3 +17,5 @@ public:
 private:
 	std::string m_name;
 };
+
+#endif
